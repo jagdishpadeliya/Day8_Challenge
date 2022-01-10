@@ -1,0 +1,110 @@
+body{
+    background-color: hsl(204, 43%, 93%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    
+}
+.box{
+    width: 300px;
+    padding: 30px;
+    height: max-content;
+    background-color: red;
+}
+.first{
+    background-color: white;
+}
+.first h3{
+    color: hsl(179, 63%, 52%);
+    margin-bottom: 1rem;
+}
+.first span{
+    color: hsl(71, 73%, 54%);
+    font-weight: 600;
+}
+.first p{
+    margin-top: 1rem;
+    color: hsl(218, 22%, 67%);
+}
+.second{
+    background-color: hsl(179, 62%, 43%);
+}
+.second h3{
+    color: white;
+}
+.second ul li span{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+.second ul{
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    list-style-type: none;
+    align-items: center;
+}
+.second ul li span{
+    margin-right: 0.5rem;
+}
+.second p{
+    color: white;
+    margin-bottom: 1.9rem;
+}
+.second button{
+    padding: 15px 80px;
+    outline: none;
+    border: none;
+    color: white;
+    font-weight: 900;
+    border-radius: 6px;
+    font-size: 17px;
+    background-color: hsl(71, 73%, 54%);
+}
+.third{
+    background-color: hsla(179, 62%, 43%,0.7);
+    color: white;
+}
+.third h3{
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+.third p{
+    margin-bottom: 0.3rem;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media screen and (min-width:1024px) {
+    .container{
+        margin-top: 100px;
+        flex-wrap: wrap;
+    }
+    .first{
+        width: 60vw;
+    }
+    .second{
+        width: 30vw;
+        height: 280px;
+    }
+    .third{
+        width: 30vw;
+        height: 280px;
+    }
+    .wrapper{
+        display: flex;
+    }
+}
